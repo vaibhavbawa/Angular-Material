@@ -1,0 +1,35 @@
+
+  
+ .container{
+    display: flex;
+ }
+  .row {
+    display: table-cell;
+    max-width: 600px;
+  }
+  
+  .row{
+    margin: 8px 8px 8px 0;
+  }
+  .card{
+    margin: 0px 50px;
+    /* padding: 0px 25px; */
+  }
+  .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+
+  /* .main{
+    margin: 0px 300px;
+  } */
+  a{
+    text-decoration: none;
+  }

@@ -1,0 +1,31 @@
+<!-- <p>toggle-button works!</p> -->
+ 
+<div class="content">
+    <div class="row">
+        <div class="col">
+            <h2>Ex. 01</h2>
+            <mat-button-toggle #myToggle (click)="onsingleToggle(myToggle)">{{myToggle.checked? 'Active' :'Inactive'}}</mat-button-toggle>
+            <br>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Ex. 02</h2>
+              <br>
+              <mat-button-toggle-group #myGrp="matButtonToggleGroup">
+                <mat-button-toggle value="left">  <mat-icon>format_align_left</mat-icon></mat-button-toggle >
+                <mat-button-toggle value="center">    <mat-icon>format_align_center</mat-icon></mat-button-toggle>
+                <mat-button-toggle value="right">   <mat-icon>format_align_right</mat-icon></mat-button-toggle>
+                <mat-button-toggle value="justify">    <mat-icon>format_align_justify</mat-icon></mat-button-toggle>
+              </mat-button-toggle-group>
+              <br>
+              {{myGrp.value}}
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h2>Ex. 03</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem debitis quae amet ex culpa tenetur repellendus deleniti nihil, nam deserunt excepturi natus labore officiis ad accusantium iste incidunt doloremque consequuntur?</p>
+        </div>
+    </div>
+</div>
