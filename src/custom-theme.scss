@@ -2,6 +2,8 @@
 // Custom Theming for Angular Material
 // For more information: https://material.angular.io/guide/theming
 @use '~@angular/material' as mat;
+
+// @import "assets/css/partials/includes";
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -27,9 +29,28 @@ $angularMaterial-theme: mat.define-light-theme((
     warn: $angularMaterial-warn,
   )
 ));
+// $foreground: map-get($theme, $foreground);
+
+//  Patettes
+$primary : mat.define-palette(mat.$green-palette, A400);
+$accent : mat.define-palette(mat.$amber-palette);
+$warn : mat.define-palette(mat.$red-palette);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
 @include mat.all-component-themes($angularMaterial-theme);
 
+.primary{
+  color: mat.get-color-from-palette($primary);
+}
+.accent{
+  color : mat.get-color-from-palette($accent,500);
+}
+.warn{
+  color: mat.get-color-from-palette($warn);
+}
+
+.bg{
+  // background: mat.get-color-from-palette($foreground, text);
+}

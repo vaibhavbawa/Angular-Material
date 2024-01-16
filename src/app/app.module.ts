@@ -10,6 +10,7 @@ import { FooterComponent } from './includes/footer/footer.component';
 import { MainComponent } from './pages/main/main.component';
 import { ButtonComponent } from './pages/button/button.component';
 import { ToggleButtonComponent } from './pages/toggle-button/toggle-button.component';
+import { DynamicColorComponent } from './pages/dynamic-color/dynamic-color.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ToggleButtonComponent } from './pages/toggle-button/toggle-button.compo
     FooterComponent,
     MainComponent,
     ButtonComponent,
-    ToggleButtonComponent
+    ToggleButtonComponent,
+    DynamicColorComponent
   ],
   imports: [
     BrowserModule,
